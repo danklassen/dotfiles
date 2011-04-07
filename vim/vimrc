@@ -1,0 +1,41 @@
+set hlsearch    " highlight search
+set incsearch   " Incremental search, search as you type
+set ignorecase  " Ignore case when searching
+set smartcase   " Ignore case when searching lowercase
+set ai          " auto indent
+set smartindent
+set nowrap
+set nocp
+
+" Colors **********************************************************************
+set t_Co=256         " 256 colors
+set background=dark
+syntax on            " syntax highlighting
+colorscheme ir_black
+
+" Mouse ***********************************************************************
+"set mouse=a " Enable the mouse
+"behave xterm
+"set selectmode=mouse
+
+" Misc settings ***************************************************************
+set backspace=indent,eol,start
+set number                     " Show line numbers
+set matchpairs+=<:>
+set vb t_vb=                   " Turn off bell, this could be more annoying, but I'm not sure how
+set nofoldenable               " Turn off folding
+
+" Omni Completion *************************************************************
+autocmd FileType html :set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
+
+filetype plugin indent on
+
+" remove trailing whitespace with f5
+:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+

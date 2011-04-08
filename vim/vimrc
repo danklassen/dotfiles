@@ -39,3 +39,7 @@ filetype plugin indent on
 " remove trailing whitespace with f5
 :nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+" Softtabs, 2 spaces
+set tabstop=2
+set shiftwidth=2
+set expandtab

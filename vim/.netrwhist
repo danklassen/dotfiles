@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/dklassen/workspace/kya/vendor/bundle/ruby/1.9.1/gems/fakeweb-1.3.0'
-let g:netrw_dirhist_2='/home/dklassen/workspace/kya/vendor/bundle/ruby/1.9.1/gems/fakeweb-1.3.0/lib'
-let g:netrw_dirhist_3='/home/dklassen/workspace/mxv'
-let g:netrw_dirhist_4='/home/dklassen/workspace/mxv/app'
-let g:netrw_dirhist_5='/home/dklassen/workspace/mxv/app/controllers'
-let g:netrw_dirhist_6='/home/dklassen/workspace/mxv'
+let g:netrw_dirhist_cnt =0

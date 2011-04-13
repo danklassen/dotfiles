@@ -12,6 +12,7 @@ set t_Co=256         " 256 colors
 set background=dark
 syntax on            " syntax highlighting
 colorscheme ir_black
+set gfn=Droid\ Sans\ Mono\ 8
 
 " Mouse ***********************************************************************
 "set mouse=a " Enable the mouse
@@ -43,3 +44,10 @@ filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" bubble single lines of text
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
+" bubble multiple lines of text
+vmap <C-Up> xkP`[V`]
+vmap <C-Down> xp`[V`]

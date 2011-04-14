@@ -43,3 +43,9 @@ filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" Directories *****************************************************************
+" Setup backup location and enable
+set backupdir=~/.backup/vim
+set backup
+

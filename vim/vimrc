@@ -50,7 +50,6 @@ set expandtab
 set backupdir=~/.backup/vim
 set backup
 
-=======
 " bubble single lines of text
 nmap <C-Up> ddkP
 nmap <C-Down> ddp

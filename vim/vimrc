@@ -15,8 +15,8 @@ colorscheme ir_black
 set gfn=Droid\ Sans\ Mono\ 8
 
 " Mouse ***********************************************************************
-"set mouse=a " Enable the mouse
-"behave xterm
+set mouse=a " Enable the mouse
+behave xterm
 "set selectmode=mouse
 
 " Misc settings ***************************************************************

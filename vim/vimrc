@@ -75,3 +75,9 @@ let g:user_zen_settings = {
   \}
 let g:user_zen_expandabbr_key = '<c-e>'
 let g:use_zen_complete_tag = 1
+
+" clean formatting for css thanks @andrewhawthorne
+map <C-F12> :%s/\(^[^ ].*,\)[ ]*\(.*[^;]\)\+/\1\r\2/g<CR><C-F12>
+map <F12> :%s/^[ \t]*//g<CR>:%s/{/{\r/g<CR>:%s/^\(.*\)[ ]*{\(.*\)}/\1{\r\2\r}/ge<CR>:%s/^\(.*;\)/\1/g<CR>:%s/;[ ]*/;\r/g<CR>:%s/[\n]\+/\r/g<CR>:%s/[\n]\+$//g<CR>:%s/}/}\r/g<CR>:%s/[ ]\+/ /g<CR>:%s/[ ]*{/ {/g<CR>:%s/[ ]\+$//ge<CR>:%s/^$//ge<CR>Gddgg=G:%s/^\(\s\+.\+\):[ ]*\(.*[^}]\)/\1: \2/g<CR><C-F12>gg
+" sort css attributes
+map <A-F12> :%s/[ ]\+$//ge<CR>:let _srch=search('{','W')<CR>viB:sort<CR>:if _srch == 0<CR>:echoerr "Sort reached bottom"<CR><ESC>:endif<CR><C-C><A-F12>
